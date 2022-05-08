@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Calculator</title>
+    <link href="https://cdn.staticfile.org/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+</head>
+<body style="padding-top: 12px; padding-bottom: 12px">
+<div class="ui container">
+    <div class="ui form">
+        <div class="field">
+            <label>选择操作</label>
+            <div class="ui selection dropdown">
+                <input id="opt" type="hidden" name="cal">
+                <div class="default text">操作</div>
+                <div class="menu">
+                    <div class="item" data-value="1">加</div>
+                    <div class="item" data-value="2">减</div>
+                    <div class="item" data-value="3">乘</div>
+                    <div class="item" data-value="4">除</div>
+                    <div class="item" data-value="5">最大公约数</div>
+                    <div class="item" data-value="6">最小公倍数</div>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>参数1</label>
+            <input id="param1" type="number">
+        </div>
+        <div class="field">
+            <label>参数2</label>
+            <input id="param2" type="number">
+        </div>
+        <div class="fluid ui submit primary button">计算</div>
+    </div>
+    <div class="ui mini modal">
+        <div class="header">
+            提示
+        </div>
+        <div class="content">
+            <div class="description">
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui primary approve button">确认</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="common.js"></script>
+</body>
+</html>
